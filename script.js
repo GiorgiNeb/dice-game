@@ -65,11 +65,11 @@ infoButton.addEventListener(`click`, function () {
 rollDice.addEventListener(`click`, function () {
   randomRoll = Math.trunc(Math.random() * 6) + 1;
   if (currentPlayer) {
-    dice.style.backgroundImage = `url(/images/dice${randomRoll}.jpg)`;
+    dice.style.backgroundImage = `url(images//dice${randomRoll}.jpg)`;
     roll1();
     player1CurrentScore.textContent = score;
   } else {
-    dice.style.backgroundImage = `url(/images/dice${randomRoll}b.jpg)`;
+    dice.style.backgroundImage = `url(images//dice${randomRoll}b.jpg)`;
     roll1();
     player2CurrentScore.textContent = score;
   }
