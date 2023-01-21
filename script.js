@@ -110,7 +110,7 @@ hold.addEventListener(`click`, function () {
   } else if (score2 >= winscore) {
     wingame(`${document.querySelector(`#player2Name`).textContent}`);
   }
-  dice.style.backgroundImage = `url(/images/question-mark-dice.jpg)`;
+  dice.style.backgroundImage = `url(images//question-mark-dice.jpg)`;
   holdSong.play();
 });
 
