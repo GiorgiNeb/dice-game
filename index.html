@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <title>Dice Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="audioFiles" hidden>
+      <audio id="roll" src="/songs/shake-and-roll-dice-soundbible.mp3"></audio>
+      <audio id="holdSong" src="/songs/cut.wav"></audio>
+      <audio id="failSong" src="/songs/fail.mp3"></audio>
+      <audio id="restartSong" src="/songs/restart.mp3"></audio>
+      <audio id="winSong" src="/songs/win.mp3"></audio>
+    </div>
+    <button id="info">info</button>
+    <div id="gamediv">
+      <div id="gameInfo">
+        <label>Player1 name: <input type="text" id="player1SetName" /></label>
+        <label>Player2 name: <input type="text" id="player2SetName" /></label>
+        <label
+          >Win score: <input type="number" id="setWinScore" value="100"
+        /></label>
+        <button id="infoButton">start</button>
+      </div>
+      <div id="win">
+        <h1 id="cup"><i class="fa-solid fa-trophy"></i></h1>
+        <h1 id="winplayer">you win</h1>
+        <button id="winRestart"><i class="fa-solid fa-rotate"></i></button>
+      </div>
+      <div id="gameTools" class="blurr">
+        <button id="restartGame">
+          <i class="fa-solid fa-rotate"></i> NEW GAME
+        </button>
+        <div id="dice"></div>
+        <button id="rollDice">ROLL DICE</button>
+        <button id="hold">HOLD</button>
+      </div>
+      <div id="player1div" class="blurr">
+        <h1 class="playerName" id="player1Name">Player1</h1>
+        <h1 id="player1Score">0</h1>
+        <div id="player1ScoreDiv">
+          <h1 class="h1Current">CURRENT</h1>
+          <h1 id="player1CurrentScore">0</h1>
+        </div>
+      </div>
+      <div id="player2div" class="blurr">
+        <h1 class="playerName" id="player2Name">Player2</h1>
+        <h1 id="player2Score">0</h1>
+        <div id="player2ScoreDiv">
+          <h1 class="h1Current">CURRENT</h1>
+          <h1 id="player2CurrentScore">0</h1>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

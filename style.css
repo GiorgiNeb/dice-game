@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "Lora", serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#bd4d4d, #721b1b);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#info {
+  margin-top: -3%;
+  background-color: rgb(147, 147, 202);
+  width: 10vw;
+  max-width: 100px;
+  height: 3vh;
+  border-radius: 5px;
+  font-size: 2vh;
+}
+.blurr {
+  filter: blur(5px);
+}
+
+#gamediv {
+  width: 80%;
+  height: 80%;
+  background: transparent;
+  border: 2px solid black;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  position: relative;
+  font-size: 20px;
+}
+
+#gameInfo {
+  z-index: 4;
+  position: absolute;
+  width: 65%;
+  height: 65%;
+  background-color: rgb(184, 180, 174);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 10% 0;
+}
+
+#infoButton {
+  width: 10vw;
+  max-width: 100px;
+}
+
+#win {
+  z-index: 3;
+  position: absolute;
+  width: 65%;
+  height: 65%;
+  background-color: rgb(184, 180, 174);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+#winRestart {
+  margin-top: 2vh;
+  height: 7vh;
+  width: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #704747;
+}
+
+#winRestart:hover {
+  background-color: #746262;
+}
+
+#cup {
+  color: rgb(223, 226, 33);
+  font-size: 8vw;
+}
+
+#winplayer {
+  font-size: 3vw;
+}
+
+#player1div {
+  width: 50%;
+  height: 100%;
+  background-color: antiquewhite;
+}
+
+#player2div {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(252, 213, 162);
+}
+
+.playerName {
+  text-align: center;
+  font-size: calc(1.5em + (2vw - 0.7em));
+  height: 25%;
+  margin: 0;
+  display: grid;
+  place-content: center;
+}
+
+#player1Score,
+#player2Score {
+  text-align: center;
+  font-size: calc(1.5em + (3vw - 0.7em));
+  height: 40%;
+  margin: 0;
+}
+
+#player1ScoreDiv,
+#player2ScoreDiv {
+  width: 50%;
+  height: 15%;
+  margin: 12.5% auto;
+  background-color: #bd4d4d;
+  border-radius: 10px;
+  display: grid;
+  place-content: center;
+}
+
+.h1Current {
+  font-size: 1em;
+  text-align: center;
+  font-size: calc(1.5em + (0.7vw - 0.7em));
+}
+
+#player1CurrentScore,
+#player2CurrentScore {
+  font-size: calc(1.5em + (1vw - 0.7em));
+  text-align: center;
+}
+
+#gameTools {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#gameTools > * {
+  height: 15vw;
+  max-height: 40px;
+  width: 15vw;
+  max-width: 130px;
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+
+#restartGame {
+  margin-top: 4vw;
+  width: 20vw;
+  max-width: 150px;
+}
+
+#dice {
+  height: 25vw;
+  max-height: 150px;
+  margin: 35px 0 25px 0;
+  width: 20vw;
+  max-width: 150px;
+  background-image: url(/images/question-mark-dice.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: white;
+  border-radius: 15px;
+}
+
+#rollDice {
+  margin-top: 30px;
+  margin-bottom: 3vw;
+  display: block;
+}
+
+#hold {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 4vw;
+}
+
+button {
+  border-radius: 25px;
+  background-color: rgb(202, 208, 211);
+  border: 0;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(147, 170, 162);
+}
