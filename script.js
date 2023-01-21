@@ -138,7 +138,7 @@ restartGame.addEventListener(`click`, function () {
   player1CurrentScore.textContent = 0;
   player2CurrentScore.textContent = 0;
   changeBackground(currentPlayer);
-  dice.style.backgroundImage = `url(/images/question-mark-dice.jpg)`;
+  dice.style.backgroundImage = `url(images//question-mark-dice.jpg)`;
   win.style.display = `none`;
   document.querySelectorAll("*").forEach(function (x) {
     x.style.filter = "blur(0px)";
